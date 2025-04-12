@@ -2,11 +2,14 @@
 
 ## Introduction
 
-This repository serves as a comprehensive guide for basic to intermediate-level research data analysis using IBM SPSS Statistics. It is designed for students, researchers, and educators who are learning or teaching fundamental statistical concepts and their practical application in SPSS. The guide explains 15 key statistical concepts in simple, relatable terms and provides step-by-step instructions for common data analysis tasks, including normality testing, data cleaning, variable computation, recoding, and both parametric and non-parametric statistical tests. Each task includes assumptions and sample APA-style result summaries with appropriate effect sizes, making it a valuable resource for demonstrating concepts in research settings. Additionally, a section on visualization charts outlines how to create and interpret a variety of graphs in SPSS to support data exploration, assumption checking, and presentation of findings.
+This repository serves as a comprehensive guide for basic to intermediate-level research data analysis using IBM SPSS Statistics. It is designed for students, researchers, and educators who are learning or teaching fundamental statistical concepts and their practical application in SPSS. 
+
+The guide explains key statistical concepts in simple, relatable terms and provides step-by-step instructions for common data analysis tasks, including normality testing, data cleaning, variable computation, recoding, visualization and both parametric and non-parametric statistical tests. It also includes sample APA-style result summaries with appropriate effect sizes, making it a valuable resource for demonstrating concepts in research settings.
+
 
 ## Statistical Concepts Explained
 
-Below are 15 statistical concepts explained in plain language, with examples to make them relatable for students.
+Below are key statistical concepts explained in plain language, with examples to make them relatable for students.
 
 ### 1. Standard Deviation
 - **Definition**: Measures how spread out data is from the average (mean).
@@ -58,135 +61,25 @@ Below are 15 statistical concepts explained in plain language, with examples to 
 - **Explanation**: It’s like flipping a coin 10 times, getting 8 heads, and asking, “Is this coin fair?” A small p-value says it’s probably not.
 - **Example**: If p = 0.03 for a score difference, there’s a 3% chance it’s random.
 
-### 11. Correlation
-- **Definition**: Measures how two variables move together.
-- **Explanation**: If you study more, do grades go up? Correlation checks if one predicts the other (positive = rise together; negative = one falls as the other rises).
-- **Example**: Study hours and grades might have a correlation of 0.7 (strong positive link).
-
-### 12. Power
+### 11. Power
 - **Definition**: The chance a test will detect a true effect if it exists.
 - **Explanation**: It’s like a flashlight in a dark room. High power means you’ll spot a real difference if it’s there.
 - **Example**: A study with 80% power has an 80% chance of finding a real drug effect.
 
-### 13. Parametric vs. Non-Parametric
+### 12. Parametric vs. Non-Parametric
 - **Definition**: Parametric tests assume data follows a normal distribution and equal variances; non-parametric tests don’t.
 - **Explanation**: Parametric tests are like following a recipe with exact measurements (e.g., assuming data is normal). Non-parametric tests are like cooking by taste—more flexible when data doesn’t meet strict rules.
 - **Example**: Use a t-test (parametric) for normally distributed test scores; use Mann-Whitney U (non-parametric) if scores are skewed.
 
-### 14. Skewness
+### 13. Skewness
 - **Definition**: Measures how lopsided a data distribution is.
 - **Explanation**: If most kids score low on a hard test but a few score high, the data is skewed right (positive skew). If most score high but a few score low, it’s skewed left (negative skew).
 - **Example**: Income data often has positive skew—most people earn less, a few earn a lot.
 
-### 15. Kurtosis
+### 14. Kurtosis
 - **Definition**: Measures how peaked or flat a data distribution is compared to a normal curve.
 - **Explanation**: High kurtosis means data is super peaked (lots of scores near the mean, few far away). Low kurtosis means it’s flat (scores spread evenly). It’s like checking if your data hill is sharp or broad.
 - **Example**: Test scores with high kurtosis cluster tightly around the average; low kurtosis means more varied scores.
-
-## Visualization Charts in SPSS
-
-Visualizations help explore data, check assumptions, and communicate findings. Below are common charts in SPSS, when to use them, and how to create them.
-
-### 1. Histogram
-- **Purpose**: Shows the distribution of a continuous variable.
-- **When to Use**: Use to assess skewness, kurtosis, or normality (bell-shaped curve suggests normal data). Ideal for one variable.
-- **Example**: Display test scores to see if they’re normally distributed.
-- **SPSS Steps**:
-  1. Go to **Graphs** > **Chart Builder**.
-  2. Drag **Histogram** to the canvas.
-  3. Move the variable (e.g., “Score”) to the X-axis.
-  4. Click **OK**.
-- **Tip**: Check “Display normal curve” in **Element Properties** to compare to a normal distribution.
-
-### 2. Boxplot
-- **Purpose**: Displays the spread, median, and outliers of a variable.
-- **When to Use**: Use to compare distributions across groups or spot outliers. Great for checking homogeneity of variance.
-- **Example**: Compare test scores by gender to see medians and outliers.
-- **SPSS Steps**:
-  1. Go to **Graphs** > **Chart Builder**.
-  2. Drag **Boxplot** (simple) to the canvas.
-  3. Move the variable (e.g., “Score”) to the Y-axis, and a grouping variable (e.g., “Gender”) to the X-axis.
-  4. Click **OK**.
-- **Tip**: Outliers appear as points beyond the whiskers.
-
-### 3. Scatterplot
-- **Purpose**: Shows the relationship between two continuous variables.
-- **When to Use**: Use to check for correlation, linearity, or heteroscedasticity in regression. Ideal for exploring associations.
-- **Example**: Plot study hours vs. test scores to see if more study time predicts higher scores.
-- **SPSS Steps**:
-  1. Go to **Graphs** > **Chart Builder**.
-  2. Drag **Scatter/Dot** to the canvas.
-  3. Move one variable (e.g., “HoursStudied”) to the X-axis, another (e.g., “Score”) to the Y-axis.
-  4. Click **OK**.
-- **Tip**: Add a fit line (in **Element Properties**) to visualize trends.
-
-### 4. Bar Chart
-- **Purpose**: Shows means or counts for categorical variables.
-- **When to Use**: Use to compare group averages (e.g., mean scores by class) or frequencies (e.g., number of students passing/failing).
-- **Example**: Show average test scores for three teaching methods.
-- **SPSS Steps**:
-  1. Go to **Graphs** > **Chart Builder**.
-  2. Drag **Bar** (simple) to the canvas.
-  3. Move the categorical variable (e.g., “Method”) to the X-axis, and a summary statistic (e.g., “Mean Score”) to the Y-axis.
-  4. Click **OK**.
-- **Tip**: Use error bars (in **Element Properties**) to show confidence intervals.
-
-### 5. Line Chart
-- **Purpose**: Displays trends over time or ordered categories.
-- **When to Use**: Use for time-series data or to compare changes across conditions (e.g., scores over weeks).
-- **Example**: Show how test scores improve from week 1 to week 4.
-- **SPSS Steps**:
-  1. Go to **Graphs** > **Chart Builder**.
-  2. Drag **Line** to the canvas.
-  3. Move the time/ordered variable (e.g., “Week”) to the X-axis, and the dependent variable (e.g., “Score”) to the Y-axis.
-  4. Optionally, add a grouping variable (e.g., “Group”) to **Set Color**.
-  5. Click **OK**.
-- **Tip**: Use for longitudinal data or repeated measures.
-
-### 6. Pie Chart
-- **Purpose**: Shows the proportion of categories within a single variable.
-- **When to Use**: Use to display the distribution of a categorical variable when you want to emphasize relative sizes (e.g., percentages of students in each grade category).
-- **Example**: Show the percentage of students who passed, failed, or got honors on a test.
-- **SPSS Steps**:
-  1. Go to **Graphs** > **Chart Builder**.
-  2. Drag **Pie/Polar** to the canvas.
-  3. Move the categorical variable (e.g., “GradeCategory”) to the **Slice by** field.
-  4. Click **OK**.
-- **Tip**: Limit to a few categories (3–5) for clarity; add percentages in **Element Properties**.
-
-### 7. Clustered Bar Chart
-- **Purpose**: Compares means or counts across multiple categorical variables.
-- **When to Use**: Use to show differences between groups across two categorical factors (e.g., mean scores by gender and teaching method).
-- **Example**: Compare average test scores for males and females across three teaching methods.
-- **SPSS Steps**:
-  1. Go to **Graphs** > **Chart Builder**.
-  2. Drag **Bar** (clustered) to the canvas.
-  3. Move one categorical variable (e.g., “Method”) to the X-axis, the dependent variable (e.g., “Mean Score”) to the Y-axis, and another categorical variable (e.g., “Gender”) to **Cluster on X**.
-  4. Click **OK**.
-- **Tip**: Use distinct colors for clusters and ensure the legend is clear.
-
-### 8. Error Bar Chart
-- **Purpose**: Displays means with confidence intervals or standard errors for groups.
-- **When to Use**: Use to visualize variability or precision of means across categories (e.g., mean scores with 95% confidence intervals by group).
-- **Example**: Show mean test scores by teaching method with confidence intervals.
-- **SPSS Steps**:
-  1. Go to **Graphs** > **Chart Builder**.
-  2. Drag **Error Bar** (simple) to the canvas.
-  3. Move the dependent variable (e.g., “Score”) to the Y-axis and the categorical variable (e.g., “Method”) to the X-axis.
-  4. In **Element Properties**, select **Confidence Intervals** (e.g., 95%) or **Standard Error**.
-  5. Click **OK**.
-- **Tip**: Use for parametric test results to show statistical uncertainty.
-
-### 9. Area Chart
-- **Purpose**: Shows cumulative trends or proportions over time or ordered categories.
-- **When to Use**: Use for continuous data over time to emphasize magnitude or stacked categories (e.g., total scores by group over weeks).
-- **Example**: Display cumulative test scores for three classes across four weeks.
-- **SPSS Steps**:
-  1. Go to **Graphs** > **Chart Builder**.
-  2. Drag **Area** (simple or stacked) to the canvas.
-  3. Move the time/ordered variable (e.g., “Week”) to the X-axis, the dependent variable (e.g., “Score”) to the Y-axis, and optionally a grouping variable (e.g., “Class”) to **Stack**.
-  4. Click **OK**.
-- **Tip**: Use stacked area charts for multiple groups to show contributions to a total.
 
 ## SPSS Tasks: Steps, Assumptions, and APA-Style Results
 
@@ -390,3 +283,110 @@ Non-parametric tests don’t assume normality or homogeneity of variance. Effect
 - Save outputs and label variables clearly for reproducibility.
 - APA-style results follow the 7th edition, including means, SDs, test statistics, p-values, and effect sizes.
 - Normality testing is critical before parametric tests; non-parametric tests are used when normality is violated.
+
+
+## Visualization Charts in SPSS
+
+Visualizations help explore data, check assumptions, and communicate findings. Below are common charts in SPSS, when to use them, and how to create them.
+
+### 1. Histogram
+- **Purpose**: Shows the distribution of a continuous variable.
+- **When to Use**: Use to assess skewness, kurtosis, or normality (bell-shaped curve suggests normal data). Ideal for one variable.
+- **Example**: Display test scores to see if they’re normally distributed.
+- **SPSS Steps**:
+  1. Go to **Graphs** > **Chart Builder**.
+  2. Drag **Histogram** to the canvas.
+  3. Move the variable (e.g., “Score”) to the X-axis.
+  4. Click **OK**.
+- **Tip**: Check “Display normal curve” in **Element Properties** to compare to a normal distribution.
+
+### 2. Boxplot
+- **Purpose**: Displays the spread, median, and outliers of a variable.
+- **When to Use**: Use to compare distributions across groups or spot outliers. Great for checking homogeneity of variance.
+- **Example**: Compare test scores by gender to see medians and outliers.
+- **SPSS Steps**:
+  1. Go to **Graphs** > **Chart Builder**.
+  2. Drag **Boxplot** (simple) to the canvas.
+  3. Move the variable (e.g., “Score”) to the Y-axis, and a grouping variable (e.g., “Gender”) to the X-axis.
+  4. Click **OK**.
+- **Tip**: Outliers appear as points beyond the whiskers.
+
+### 3. Scatterplot
+- **Purpose**: Shows the relationship between two continuous variables.
+- **When to Use**: Use to check for correlation, linearity, or heteroscedasticity in regression. Ideal for exploring associations.
+- **Example**: Plot study hours vs. test scores to see if more study time predicts higher scores.
+- **SPSS Steps**:
+  1. Go to **Graphs** > **Chart Builder**.
+  2. Drag **Scatter/Dot** to the canvas.
+  3. Move one variable (e.g., “HoursStudied”) to the X-axis, another (e.g., “Score”) to the Y-axis.
+  4. Click **OK**.
+- **Tip**: Add a fit line (in **Element Properties**) to visualize trends.
+
+### 4. Bar Chart
+- **Purpose**: Shows means or counts for categorical variables.
+- **When to Use**: Use to compare group averages (e.g., mean scores by class) or frequencies (e.g., number of students passing/failing).
+- **Example**: Show average test scores for three teaching methods.
+- **SPSS Steps**:
+  1. Go to **Graphs** > **Chart Builder**.
+  2. Drag **Bar** (simple) to the canvas.
+  3. Move the categorical variable (e.g., “Method”) to the X-axis, and a summary statistic (e.g., “Mean Score”) to the Y-axis.
+  4. Click **OK**.
+- **Tip**: Use error bars (in **Element Properties**) to show confidence intervals.
+
+### 5. Line Chart
+- **Purpose**: Displays trends over time or ordered categories.
+- **When to Use**: Use for time-series data or to compare changes across conditions (e.g., scores over weeks).
+- **Example**: Show how test scores improve from week 1 to week 4.
+- **SPSS Steps**:
+  1. Go to **Graphs** > **Chart Builder**.
+  2. Drag **Line** to the canvas.
+  3. Move the time/ordered variable (e.g., “Week”) to the X-axis, and the dependent variable (e.g., “Score”) to the Y-axis.
+  4. Optionally, add a grouping variable (e.g., “Group”) to **Set Color**.
+  5. Click **OK**.
+- **Tip**: Use for longitudinal data or repeated measures.
+
+### 6. Pie Chart
+- **Purpose**: Shows the proportion of categories within a single variable.
+- **When to Use**: Use to display the distribution of a categorical variable when you want to emphasize relative sizes (e.g., percentages of students in each grade category).
+- **Example**: Show the percentage of students who passed, failed, or got honors on a test.
+- **SPSS Steps**:
+  1. Go to **Graphs** > **Chart Builder**.
+  2. Drag **Pie/Polar** to the canvas.
+  3. Move the categorical variable (e.g., “GradeCategory”) to the **Slice by** field.
+  4. Click **OK**.
+- **Tip**: Limit to a few categories (3–5) for clarity; add percentages in **Element Properties**.
+
+### 7. Clustered Bar Chart
+- **Purpose**: Compares means or counts across multiple categorical variables.
+- **When to Use**: Use to show differences between groups across two categorical factors (e.g., mean scores by gender and teaching method).
+- **Example**: Compare average test scores for males and females across three teaching methods.
+- **SPSS Steps**:
+  1. Go to **Graphs** > **Chart Builder**.
+  2. Drag **Bar** (clustered) to the canvas.
+  3. Move one categorical variable (e.g., “Method”) to the X-axis, the dependent variable (e.g., “Mean Score”) to the Y-axis, and another categorical variable (e.g., “Gender”) to **Cluster on X**.
+  4. Click **OK**.
+- **Tip**: Use distinct colors for clusters and ensure the legend is clear.
+
+### 8. Error Bar Chart
+- **Purpose**: Displays means with confidence intervals or standard errors for groups.
+- **When to Use**: Use to visualize variability or precision of means across categories (e.g., mean scores with 95% confidence intervals by group).
+- **Example**: Show mean test scores by teaching method with confidence intervals.
+- **SPSS Steps**:
+  1. Go to **Graphs** > **Chart Builder**.
+  2. Drag **Error Bar** (simple) to the canvas.
+  3. Move the dependent variable (e.g., “Score”) to the Y-axis and the categorical variable (e.g., “Method”) to the X-axis.
+  4. In **Element Properties**, select **Confidence Intervals** (e.g., 95%) or **Standard Error**.
+  5. Click **OK**.
+- **Tip**: Use for parametric test results to show statistical uncertainty.
+
+### 9. Area Chart
+- **Purpose**: Shows cumulative trends or proportions over time or ordered categories.
+- **When to Use**: Use for continuous data over time to emphasize magnitude or stacked categories (e.g., total scores by group over weeks).
+- **Example**: Display cumulative test scores for three classes across four weeks.
+- **SPSS Steps**:
+  1. Go to **Graphs** > **Chart Builder**.
+  2. Drag **Area** (simple or stacked) to the canvas.
+  3. Move the time/ordered variable (e.g., “Week”) to the X-axis, the dependent variable (e.g., “Score”) to the Y-axis, and optionally a grouping variable (e.g., “Class”) to **Stack**.
+  4. Click **OK**.
+- **Tip**: Use stacked area charts for multiple groups to show contributions to a total.
+
