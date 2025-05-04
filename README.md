@@ -57,9 +57,11 @@ Below are key statistical concepts explained in plain language, with examples to
 - **Example**: Mean TV time = 2 hours, SE = 0.3. The true mean is likely 1.7–2.3 hours.
 
 ### 10. P-value
-- **Definition**: The chance of getting your results if there’s no real effect (null hypothesis is true).
+- **Definition**: A *p-value* (probability value) is a measure used in statistics to help determine whether the results of an experiment or study are *statistically significant*. It tells you *how likely it is that your observed results happened by random chance*.
 - **Explanation**: It’s like flipping a coin 10 times, getting 8 heads, and asking, “Is this coin fair?” A small p-value says it’s probably not.
-- **Example**: If p = 0.03 for a score difference, there’s a 3% chance it’s random.
+- A **small p-value** (typically **< 0.05**) suggests that the observed data is **unlikely** under the assumption that the null hypothesis is true — so, you may **reject the null hypothesis**.
+- A **large p-value** (typically **≥ 0.05**) suggests that the observed data is **likely** under the null hypothesis — so, you **do not reject** the null hypothesis.
+
 
 ### 11. Power
 - **Definition**: The chance a test will detect a true effect if it exists.
